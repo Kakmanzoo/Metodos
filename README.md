@@ -1,18 +1,34 @@
-## Getting Started
+# Proyecto Java en Visual Studio Code
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+¡Bienvenido al mundo Java en Visual Studio Code! Este archivo README te guiará para comenzar a escribir código Java y entender mejor la estructura del proyecto y los métodos incluidos.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## Estructura del Proyecto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+El espacio de trabajo contiene las siguientes carpetas por defecto:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **`src`**: Carpeta para mantener los archivos fuente.
+- **`lib`**: Carpeta para gestionar las dependencias.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Los archivos compilados se generarán automáticamente en la carpeta **`bin`**.
 
-## Dependency Management
+> Si deseas personalizar la estructura de carpetas, abre el archivo **`.vscode/settings.json`** y actualiza las configuraciones relacionadas.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## Métodos Incluidos
+
+El proyecto contiene dos métodos principales en los archivos fuente dentro de la carpeta **`src`**:
+
+1. **Método `calcularPromedio`**  
+   Este método toma una lista de números enteros como entrada y devuelve el promedio como un número decimal. Es útil para realizar cálculos estadísticos básicos.
+
+   ```java
+   public static double calcularPromedio(int[] numeros) {
+       int suma = 0;
+       for (int numero : numeros) {
+           suma += numero;
+       }
+       return (double) suma / numeros.length;
+   }
